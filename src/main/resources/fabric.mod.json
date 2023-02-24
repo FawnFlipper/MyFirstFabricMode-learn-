@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "my_first_fabric",
+  "version": "${version}",
+
+  "name": "My First Fabric Mode",
+  "description": "Ja hz che delaet etot mod",
+  "authors": [
+    "FawnFlipper"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/myfirstfabric/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.fawnflipper.myfirstfabric.MyFirstFabricMode"
+    ],
+    "client": [
+      "com.fawnflipper.myfirstfabric.MyFirstFabricModeClient"
+    ]
+  },
+  "mixins": [
+    "myfirstfabric.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
